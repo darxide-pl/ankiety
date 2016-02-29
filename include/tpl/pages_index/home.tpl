@@ -34,16 +34,18 @@
           <div class="join-start">
             <strong>Dołącz</strong><br>do nas
           </div>
+          
           <div class="join-form">
+            <div class="float-right" id="login_messages"></div>
             <i class="fa fa-times join-close"></i>
-            <form action="http://catidev.ecrf.biz.pl/user/register_rest?page_action=7ed1feb90b13a__VXNlcnN8cmVnaXN0ZXJfcmVzdA==__52fe1c9f2409828147cb33c194b" method="post"> 
+            <form action="http://catidev.ecrf.biz.pl/user/register_rest" method="post" id="login_form"> 
               <input class="form-control" placeholder="email" name="email"></input>  
               <input class="form-control" placeholder="imię" name="first-name"></input>
               <input class="form-control" placeholder="nazwisko" name="surname"></input>
               <input class="form-control" placeholder="telefon" name="phone"></input>
               <i class="fa fa-square-o form-reg"></i>rejestrując się, akceptuję <a href="/regulamin">regulamin</a>  
               <input type="hidden" name="page_action" value="7ed1feb90b13a__VXNlcnN8cmVnaXN0ZXJfcmVzdA%3D%3D__52fe1c9f2409828147cb33c194b" />
-              <input type="submit" class="btn btn-primary" value="rejestruj" />
+              <input id="panel_register" class="btn btn-primary" value="rejestruj" />
             </form>
           </div>
         </div>
@@ -104,3 +106,38 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+
+on(function(){
+
+  $("#panel_register").on('click',function (e) {
+
+    var email = $("input[name='email']").val();
+
+      $.post("http://catidev.ecrf.biz.pl/user/register_rest?page_action=7ed1feb90b13a__VXNlcnN8cmVnaXN0ZXJfcmVzdA%3D%3D__52fe1c9f2409828147cb33c194b",{email:email}, function(data){
+
+         var result = jQuery.parseJSON(data);
+
+         if (result.res == false) {
+
+          $("input[name='email']").css('border-color','red');
+
+          $("#login_messages").html("Taki email juz istnieje")
+
+          console.log(result.msg);
+
+         } else {
+
+          location.href = 'http://catidev.ecrf.biz.pl/login/panel/';
+
+         }
+
+    });
+
+  });
+
+
+});
+  
+</script>

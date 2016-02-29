@@ -105,8 +105,6 @@
 </div>
 
 
-
-
 	<?php echo $this->getMessages() ?>
 
 	<?php $this->display(); ?>
