@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /include/
+Disallow: /tmp/
+Disallow: /manager/

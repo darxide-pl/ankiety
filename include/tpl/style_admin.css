@@ -1,0 +1,234 @@
+.navbar-header .navbar-form {
+	margin: 0;
+	padding: 10px 0 0 0;
+	border: 0;
+	box-shadow: none;
+}
+.navbar-form input[type="text"] {
+	background: #555;
+	border-color: #777;
+	color: #eee;
+}
+.navbar-form .typeahead a {
+	padding: 9px 25px;
+}
+.panel-heading .btn-group {
+	margin: -5px -9px;
+}
+.panel-success .panel-heading {
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+	color: #fff;
+}
+.panel-success {
+	border-color: #4cae4c;
+}
+.panel-footer .pagination {
+	margin: 0;
+}
+
+#form-signin-bg {
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	background: url('../../assets/img/login-background.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+#form-signin-bg {
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	background: url('../../assets/img/login-background.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+.form-signin {
+	max-width: 280px;
+	margin: 60px auto 10px;
+}
+.form-signin .form-signin-heading {
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 0px 1px 2px #111;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.form-signin .checkbox {
+	font-weight: normal;
+}
+.form-signin .form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.form-signin input[type="text"] {
+	margin-bottom: -1px;
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	border-radius: 6px 6px 0px 0px;
+}
+.form-signin input[type="text"]:focus {
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.form-signin input[type="password"] {
+	z-index: 2;
+	margin-bottom: 20px;
+	border-top: none;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	border-radius: 0px 0px 6px 6px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0px 1px 0px 0px rgba(255, 255, 255, 0.5);
+}
+.form-signin input[type="password"]:focus {
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0px 1px 0px 0px rgba(255, 255, 255, 0.5);
+}
+.form-signin .btn {
+	font-weight: bold;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+}
+
+p.sign-up {
+	text-shadow: 0px 1px 2px #222;
+	color: #fff;
+	font-size: 12px;
+}
+
+body {
+	padding-top: 70px;
+}
+
+.textarea-expand {
+	overflow: hidden;
+	transition: height 0.2s;
+	-webkit-transition: height 0.2s;
+	-moz-transition: height 0.2s;
+}
+
+.uploadContainer {
+	position: relative;
+	float: left;
+}
+
+.uploadQueue {position:absolute;z-index:10;}
+	
+.uploadQueueItem {
+	background-color: #F5F5F5;
+	border: 2px solid #E5E5E5;
+	font: 11px Verdana, Geneva, sans-serif;
+	margin-top: 5px;
+	padding: 10px;
+	width: 350px;
+}
+.uploadError {
+	background-color: #FDE5DD !important;
+	border: 2px solid #FBCBBC !important;
+}
+.uploadQueueItem .cancel {
+	float: right;
+}
+.uploadQueue .completed {
+	background-color: #E5E5E5;
+}
+.uploadProgress {
+	background-color: #E5E5E5;
+	margin-top: 10px;
+	width: 100%;
+}
+.uploadProgressBar {
+	background-color: #0099FF;
+	height: 3px;
+	width: 1px;
+}
+
+.files-list {
+	
+}
+
+.file {
+	text-align: center;
+}
+
+.my-list-icon {
+	width: 35px;
+	opacity: 0.5;
+}
+
+.form-control-clear {
+	color: #999;
+}
+.form-control-clear:hover {
+	color: #666;
+	text-decoration: none;
+}
+
+@media (max-width: 767px) {
+	span.visible-xs {
+		display: inline !important;
+	}
+}
+
+.image .thumbnail {
+	position: relative;
+}
+.image .thumbnail .close {
+	position: absolute;
+	right: 5px;
+	top: 0px;
+}
+
+.tab-content {
+	margin: 20px 0;
+}
+
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+ol.sortable {
+	list-style: none;
+	margin: 10px 0;
+	float: left;
+	width: 100%;
+}
+ol.sortable li {
+	display: block;
+	float: left;
+	width: 100%;
+	line-height: 40px;
+	
+}
+ol.sortable .body {
+	background: #f7f7f7;
+	padding: 0 10px;
+	margin: 1px 0;
+}
+ol.sortable .body:hover {
+	background: #f7f7f7;
+}
+
+ol.sortable li.placeholder {
+  position: relative;
+  /** More li styles **/
+  height: 40px;
+  background: #eee;
+  border: 1px solid #ddd;
+}
+ol.sortable li.placeholder:before {
+  position: absolute;
+  /** Define arrowhead **/
+}

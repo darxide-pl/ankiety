@@ -1,0 +1,80 @@
+.hamburger {
+	display: none;
+    float: right;
+    top: 6px;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+	%dynamic-box {
+		width: 100%;
+		height: auto;
+		box-sizing: border-box;
+		display: block;
+		float: none;
+		clear: both;
+	}
+
+	.hamburger {
+		display: block;
+	}
+
+	.wrapper {
+		
+		@extend %dynamic-box;
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+
+	#dron .logo {
+		bottom: 170px;
+		left: 0;
+	}
+
+	#contact h1 {
+  		font-size: 34px;
+  	}
+
+	.menu {
+		display: block;
+		height: auto;
+		overflow: hidden;
+	    -webkit-transform: perspective(400) rotate3d(1, 0, 0, -90deg);
+	    -webkit-transform-origin: 50% 0;
+	    -webkit-transition: 350ms;
+	    -moz-transition: 350ms;
+	    -o-transition: 350ms;
+	    transition: 350ms;
+	    width: 100%;
+	    max-height: 0;
+	    position: absolute;
+		z-index: 100;
+		left: 0;
+		top: 100%;
+		margin: 0;
+		
+		.item {
+			display: block;
+			line-height: 1;
+			border: 0;
+			padding: 0;
+			a {
+				line-height: 30px;
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				height: auto;
+				&.facebook {
+					margin-top: 20px;
+				}
+			}
+		}
+		&.open {
+			-webkit-transform: perspective(400) rotate3d(0, 0, 0, 0);
+  			overflow: visible;
+  			max-height: 1000px;
+  			background: rgba(0,0,0,0.7);
+  			padding: 20px 0;
+		}
+	}
+}

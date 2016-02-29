@@ -1,0 +1,153 @@
+; <?php die();?>
+
+[pl]
+
+label = "Polski"
+
+[pl.php]
+
+label = "GŁÓWNY"
+
+[pl_m_allegro_templates.php]
+
+label = "Szablony Allegro"
+
+[pl_m_articles.php]
+
+label = "Strony / Artykuły"
+
+[pl_m_basket.php]
+
+label = "Koszyk"
+
+[pl_m_configuration.php]
+
+label = "Konfiguracja"
+
+[pl_m_configuration_groups.php]
+
+label = "Grupy konfiguracyjne"
+
+[pl_m_customers.php]
+
+label = "Klienci"
+
+[pl_m_dotpay_logs.php]
+
+label = "Logi DotPay.pl"
+
+[pl_m_error.php]
+
+label = "Raportowanie błędów"
+
+[pl_m_ftp_explorer.php]
+
+label = "Zarządzanie zdjęciami"
+
+[pl_m_hp_menu.php]
+
+label = "Menu strony głównej"
+
+[pl_m_login.php]
+
+label = "Logowanie do systemu"
+
+[pl_m_main.php]
+
+label = "Strona główna panelu zarządzania"
+
+[pl_m_newsletter.php]
+
+label = "Newsletter"
+
+[pl_m_newsletter_users.php]
+
+label = "Newsletter - baza adresów"
+
+[pl_m_orders.php]
+
+label = "Zamówienia"
+
+[pl_m_order_payments.php]
+
+label = "Formy płatności"
+
+[pl_m_order_postages.php]
+
+label = "Formy transportu"
+
+[pl_m_product.php]
+
+label = "Produkty na stronie głównej"
+
+[pl_m_products.php]
+
+label = "Produkty"
+
+[pl_m_product_attributes.php]
+
+label = "Atrybuty produktów"
+
+[pl_m_product_producers.php]
+
+label = "Producenci produktów"
+
+[pl_m_product_promotions.php]
+
+label = "Promocje"
+
+[pl_m_product_status.php]
+
+label = "Stany produktów"
+
+[pl_m_script_logs.php]
+
+label = "Logi skryptów"
+
+[pl_m_search.php]
+
+label = "Wyszukiwarka w panelu"
+
+[pl_m_system_actions.php]
+
+label = "Akcje systemowe"
+
+[pl_m_system_languages.php]
+
+label = "Wersje językowe"
+
+[pl_m_system_messages.php]
+
+label = "Powiadomienia systemowe"
+
+[pl_m_system_modules.php]
+
+label = "Moduły"
+
+[pl_m_tax_rates.php]
+
+label = "Stawki podatkowe"
+
+[pl_m_users.php]
+
+label = "Użytkownicy"
+
+[pl_m_users_groups.php]
+
+label = "Grupy użytkowników"
+
+[pl_m_hp_box.php]
+
+label = "Kolumny strony"
+
+[pl_m_survey.php]
+
+label = "Ankiety"
+
+[pl_m_articles_categories.php]
+
+label = "Kategorie artykułów"
+
+[pl_m_ip_blockades.php]
+
+label = "Blokady IP"
