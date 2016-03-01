@@ -1,0 +1,9 @@
+ankiety.sublime-workspace
+ankietygit.sublime-workspace
+ankietygit.sublime-project
+ankiety.sublime-project
+tmp/
+upload/
+sftp-config.json
+include/config.php
+include/core.php
