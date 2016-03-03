@@ -68,6 +68,40 @@ $(document).on('click' , '.form-reg' , function() {
 	$(this).toggleClass('fa-check-square-o fa-square-o')
 })
 
+
+window.runned = 0
+function arrowz()
+{
+	if(window.runned == 0)
+	{
+		$('.arrow').each(function(v) {
+			var that = $(this)
+			setTimeout(function() {
+
+				$('.circles > div > div').eq(v+1).addClass('rubber_once')
+				
+				if(v != 3)
+				{
+					that.animate({
+						width : '220px'
+					})			
+				}
+
+				if(v == 3)
+				{
+					that.animate({
+						width : '220px',
+						left : '793px',
+						top : '217px'
+					})	
+				}
+
+			} , v*500)
+		})		
+	}
+	window.runned = 1
+}
+
 var ofst = {
 	"#kontakt" : -50,
 	"#getting-started" : -50
@@ -80,3 +114,21 @@ $('.anchor').click(function(){
     return false;
 });
 
+
+function isScrolledIntoView(elem)
+{
+    var $elem = $(elem);
+    var $window = $(window);
+
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+$(window).scroll(function() {
+	isScrolledIntoView('.getting-started') == true && arrowz()
+})

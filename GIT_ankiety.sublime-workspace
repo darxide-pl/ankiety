@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"arr",
+				"arrow"
+			],
+			[
+				"func",
+				"function〔keyword〕"
+			],
+			[
 				"border",
 				"border-radius"
 			],
@@ -359,39 +367,15 @@
 			"file": "include/tpl/pages_index/home.tpl",
 			"settings":
 			{
-				"buffer_size": 4560,
-				"line_ending": "Unix"
+				"buffer_size": 5485,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "include/tpl/pages_index/index.tpl",
 			"settings":
 			{
-				"buffer_size": 3592,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "include/tpl/index.tpl",
-			"settings":
-			{
-				"buffer_size": 5393,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/scss/_tablet.scss",
-			"settings":
-			{
-				"buffer_size": 215,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/_mobile.scss",
-			"settings":
-			{
-				"buffer_size": 179,
+				"buffer_size": 4324,
 				"line_ending": "Windows"
 			}
 		},
@@ -399,7 +383,7 @@
 			"file": "assets/scss/style.scss",
 			"settings":
 			{
-				"buffer_size": 10384,
+				"buffer_size": 10861,
 				"line_ending": "Windows"
 			}
 		},
@@ -407,7 +391,15 @@
 			"file": "assets/css/style.css",
 			"settings":
 			{
-				"buffer_size": 19058,
+				"buffer_size": 19376,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "include/tpl/index.tpl",
+			"settings":
+			{
+				"buffer_size": 5376,
 				"line_ending": "Windows"
 			}
 		},
@@ -415,7 +407,7 @@
 			"file": "assets/js/main.js",
 			"settings":
 			{
-				"buffer_size": 1391,
+				"buffer_size": 2298,
 				"line_ending": "Windows"
 			}
 		}
@@ -483,6 +475,9 @@
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/GIT/ankiety/.htaccess",
+		"/C/xampp/htdocs/GIT/ankiety/assets/scss/_mobile.scss",
+		"/C/xampp/htdocs/GIT/ankiety/assets/scss/_tablet.scss",
 		"/C/xampp/htdocs/GIT/ankiety/include/class/PEAR/Cache/Lite.php",
 		"/C/xampp/htdocs/GIT/ankiety/scss/style.scss",
 		"/C/xampp/htdocs/GIT/ankiety/include/class/Logger.php",
@@ -492,10 +487,8 @@
 		"/C/Users/darxide/AppData/Local/Temp/scp08107/ankiety/assets/img/logo.svg",
 		"/C/xampp/htdocs/GIT/ankiety/js/main.js",
 		"/C/xampp/htdocs/GIT/ankiety/assets/js/main.js",
-		"/C/xampp/htdocs/GIT/ankiety/assets/scss/_mobile.scss",
 		"/C/xampp/htdocs/GIT/ankiety/index.php",
 		"/C/xampp/htdocs/GIT/ankiety/sftp-config.json",
-		"/C/xampp/htdocs/GIT/ankiety/.htaccess",
 		"/C/xampp/htdocs/GIT/ankiety/include/core.php",
 		"/C/xampp/htdocs/GIT/ankiety/config.rb",
 		"/C/xampp/htdocs/GIT/ankiety/session.txt",
@@ -609,8 +602,7 @@
 		"/C/xampp/htdocs/pagerank/index.php",
 		"/C/xampp/htdocs/pagerank/google_pagerank.class.php",
 		"/C/xampp/htdocs/pagerank/pr.class.php",
-		"/C/Users/darxide/AppData/Local/Temp/scp24006/domains/oprogramowanie-dedykowane.pl/public_html/assets/css/style.css",
-		"/C/Users/darxide/AppData/Local/Temp/scp23283/domains/oprogramowanie-dedykowane.pl/public_html/assets/scss/style.scss"
+		"/C/Users/darxide/AppData/Local/Temp/scp24006/domains/oprogramowanie-dedykowane.pl/public_html/assets/css/style.css"
 	],
 	"find":
 	{
@@ -628,6 +620,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"opini",
+			"form",
+			"title",
 			"form",
 			"zalo",
 			"7ths",
@@ -752,9 +747,6 @@
 			"connct",
 			"local",
 			"host",
-			"conne",
-			"home",
-			"host",
 			"conne"
 		],
 		"highlight": true,
@@ -788,7 +780,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -797,15 +789,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4560,
+						"buffer_size": 5485,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1962,
-								1962
+								1680,
+								1681
 							]
 						],
 						"settings":
@@ -819,10 +811,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 536.0,
+						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -831,15 +823,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3592,
+						"buffer_size": 4324,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2588,
-								2588
+								1577,
+								1578
 							]
 						],
 						"settings":
@@ -853,125 +845,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 493.0,
+						"translation.y": 333.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "include/tpl/index.tpl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5393,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1720,
-								1724
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 601.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "assets/scss/_tablet.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 215,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								185,
-								185
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "assets/scss/_mobile.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 179,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								170,
-								170
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
 					"file": "assets/scss/style.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10384,
+						"buffer_size": 10861,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5734,
-								5734
+								10814,
+								10814
 							]
 						],
 						"settings":
@@ -984,27 +878,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5526.0,
+						"translation.y": 10050.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 3,
 					"file": "assets/css/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19058,
+						"buffer_size": 19376,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14864,
-								14865
+								15041,
+								15041
 							]
 						],
 						"settings":
@@ -1018,24 +912,58 @@
 						"translation.y": 2926.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "assets/js/main.js",
+					"buffer": 4,
+					"file": "include/tpl/index.tpl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1391,
+						"buffer_size": 5376,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								441,
-								441
+								1705,
+								1709
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 353.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "assets/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2298,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1355,
+								1355
 							]
 						],
 						"settings":
@@ -1048,10 +976,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 703.0,
+						"translation.y": 1295.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1113,6 +1041,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"hta",
+				".htaccess"
+			],
 			[
 				"styles",
 				"assets\\scss\\style.scss"

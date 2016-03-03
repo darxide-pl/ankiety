@@ -7,7 +7,7 @@
         
     <meta charset="utf-8" />
 	
-	<title>Badania telefoniczne - studio CATI</title>
+	<title>Badania internetowe</title>
      <script type="text/javascript" defer async>
       WebFontConfig = {
         google: { families: [ 'Open+Sans:400,300,600,800,700:latin,latin-ext' ] }
@@ -82,7 +82,7 @@
         </a>
       </div>
       <div class="right-header">
-        <a href="http://catidev.ecrf.biz.pl/login/panel" class="btn-contact hidden-xs">zaloguj się</a>
+        <a href="http://cati.ecrf.biz.pl/login/panel" class="btn-contact hidden-xs">zaloguj się</a>
         <a href="<?php echo (strlen($_SERVER['REQUEST_URI']) > 2) ? '/' : '' ?>#kontakt" class="anchor hidden-xs">kontakt</a>
         <span class="menu-trigger">
           <i class="fa fa-bars"></i> <span>MENU</span> 

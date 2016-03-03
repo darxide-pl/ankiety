@@ -348,6 +348,13 @@ ol {
   animation:         rubbah 3s infinite;
 }
 
+.rubber_once {
+  -webkit-animation: rubbah 3s 1; 
+  -moz-animation:    rubbah 3s 1;
+  -o-animation:      rubbah 3s 1; 
+  animation:         rubbah 3s 1;    
+}
+
 @-webkit-keyframes rubbah {
     0%      { -webkit-transform:scaleX(1) scaleY(1); }
     15%     { -webkit-transform:scaleX(1) scaleY(1); }
@@ -443,6 +450,8 @@ ol {
 .arrow {
     text-align: center;
     position: absolute;
+    width: 0px;
+    overflow: hidden;
 }
 .arrow1 {
     top: 132px;
@@ -457,8 +466,10 @@ ol {
     left: 797px;
 }
 .arrow4 {
-    top: 217px;
-    left: 793px;
+    /*top: 217px;*/
+    /*left: 793px;*/
+    left: 996px;
+    top: 190px;
 }
 
 .contact {
@@ -495,6 +506,17 @@ ol {
         width: 200px;
     }
 }
-
+.slogan {
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    background-color: rgba(32,80,129,0.75);
+    padding: 20px 0px;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    width: 42.8571%;
+    color: #fff;
+}
 @import '_mobile.scss';
 @import 'tablet.scss';

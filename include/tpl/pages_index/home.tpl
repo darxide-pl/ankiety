@@ -29,6 +29,11 @@
       <img src="<?php echo BASE_DIR ?>/assets/img/slice3.jpg" class="hidden-xs hidden-sm" />      
     </div>
 
+    <div class="slogan">
+      <span style="font-size:29px">Płatne ankiety<span> <br> 
+      <span style="font-size: 19px;font-weight: 300">zarabiaj dzieląc się z nami swoją opinią</span>
+    </div>
+
     <div class="join-us rubber">
         <div class="wrapping">
           <div class="join-start">
