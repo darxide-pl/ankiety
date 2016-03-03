@@ -43,11 +43,10 @@
           <div class="join-form">
             <div class="float-right" id="login_messages"></div>
             <i class="fa fa-times join-close"></i>
-            <form action="http://catidev.ecrf.biz.pl/user/register_rest" method="post" id="login_form"> 
+            <form action="http://cati.ecrf.biz.pl/user/register_rest" method="post" id="login_form"> 
               <input class="form-control" placeholder="email" name="email"></input>  
               <input class="form-control" placeholder="imię" name="first-name"></input>
               <input class="form-control" placeholder="nazwisko" name="surname"></input>
-              <input class="form-control" placeholder="telefon" name="phone"></input>
               <i class="fa fa-square-o form-reg"></i>rejestrując się, akceptuję <a href="/regulamin">regulamin</a>  
               <input type="hidden" name="page_action" value="7ed1feb90b13a__VXNlcnN8cmVnaXN0ZXJfcmVzdA%3D%3D__52fe1c9f2409828147cb33c194b" />
               <input id="panel_register" class="btn btn-primary" value="rejestruj" />
@@ -120,7 +119,7 @@ on(function(){
 
     var email = $("input[name='email']").val();
 
-      $.post("http://catidev.ecrf.biz.pl/user/register_rest?page_action=7ed1feb90b13a__VXNlcnN8cmVnaXN0ZXJfcmVzdA%3D%3D__52fe1c9f2409828147cb33c194b",{email:email}, function(data){
+      $.post("http://cati.ecrf.biz.pl/user/register_rest?page_action=7ed1feb90b13a__VXNlcnN8cmVnaXN0ZXJfcmVzdA%3D%3D__52fe1c9f2409828147cb33c194b",{email:email}, function(data){
 
          var result = jQuery.parseJSON(data);
 
@@ -134,7 +133,7 @@ on(function(){
 
          } else {
 
-          location.href = 'http://catidev.ecrf.biz.pl/login/panel/';
+          location.href = 'http://cati.ecrf.biz.pl/login/panel/';
 
          }
 
