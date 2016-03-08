@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"adva",
+				"advantage__ico"
+			],
+			[
 				"arr",
 				"arrow"
 			],
@@ -364,18 +368,10 @@
 	"buffers":
 	[
 		{
-			"file": "include/tpl/pages_index/home.tpl",
+			"file": "include/tpl/index.tpl",
 			"settings":
 			{
-				"buffer_size": 5390,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "include/tpl/pages_index/index.tpl",
-			"settings":
-			{
-				"buffer_size": 4231,
+				"buffer_size": 5364,
 				"line_ending": "Windows"
 			}
 		},
@@ -383,7 +379,7 @@
 			"file": "assets/scss/style.scss",
 			"settings":
 			{
-				"buffer_size": 10861,
+				"buffer_size": 11259,
 				"line_ending": "Windows"
 			}
 		},
@@ -391,23 +387,31 @@
 			"file": "assets/css/style.css",
 			"settings":
 			{
-				"buffer_size": 19376,
+				"buffer_size": 19791,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "include/tpl/index.tpl",
+			"file": "include/tpl/pages_index/home.tpl",
 			"settings":
 			{
-				"buffer_size": 5373,
+				"buffer_size": 8859,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/js/main.js",
+			"file": "assets/scss/_mobile.scss",
 			"settings":
 			{
-				"buffer_size": 2298,
+				"buffer_size": 257,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/_tablet.scss",
+			"settings":
+			{
+				"buffer_size": 292,
 				"line_ending": "Windows"
 			}
 		}
@@ -466,7 +470,8 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/GIT/ankiety",
-		"/C/xampp/htdocs/GIT/ankiety/include",
+		"/C/xampp/htdocs/GIT/ankiety/assets",
+		"/C/xampp/htdocs/GIT/ankiety/assets/scss",
 		"/C/xampp/htdocs/GIT/ankiety/include/class",
 		"/C/xampp/htdocs/GIT/ankiety/include/class/PEAR",
 		"/C/xampp/htdocs/GIT/ankiety/include/class/PEAR/Cache",
@@ -475,18 +480,23 @@
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/GIT/ankiety/scss/style.scss",
+		"/C/xampp/htdocs/GIT/ankiety/include/tpl/pages_index/home.tpl",
+		"/C/xampp/htdocs/GIT/ankiety/include/tpl/pages_index/index.tpl",
+		"/C/xampp/htdocs/GIT/ankiety/assets/scss/style.scss",
+		"/C/xampp/htdocs/GIT/ankiety/assets/css/style.css",
+		"/C/xampp/htdocs/GIT/ankiety/include/tpl/index.tpl",
+		"/C/xampp/htdocs/GIT/ankiety/assets/js/main.js",
 		"/C/xampp/htdocs/GIT/ankiety/.htaccess",
 		"/C/xampp/htdocs/GIT/ankiety/assets/scss/_mobile.scss",
 		"/C/xampp/htdocs/GIT/ankiety/assets/scss/_tablet.scss",
 		"/C/xampp/htdocs/GIT/ankiety/include/class/PEAR/Cache/Lite.php",
-		"/C/xampp/htdocs/GIT/ankiety/scss/style.scss",
 		"/C/xampp/htdocs/GIT/ankiety/include/class/Logger.php",
 		"/C/xampp/htdocs/GIT/ankiety/include/class/LoggerDb.php",
 		"/C/Users/darxide/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
 		"/C/xampp/htdocs/GIT/ankiety/include/class/Session.php",
 		"/C/Users/darxide/AppData/Local/Temp/scp08107/ankiety/assets/img/logo.svg",
 		"/C/xampp/htdocs/GIT/ankiety/js/main.js",
-		"/C/xampp/htdocs/GIT/ankiety/assets/js/main.js",
 		"/C/xampp/htdocs/GIT/ankiety/index.php",
 		"/C/xampp/htdocs/GIT/ankiety/sftp-config.json",
 		"/C/xampp/htdocs/GIT/ankiety/include/core.php",
@@ -597,12 +607,7 @@
 		"/C/Users/darxide/AppData/Local/Temp/scp31703/domains/tajemniczy-klient.com.pl/public_html/_forum/phpbb/db/driver/factory.php",
 		"/C/Users/darxide/AppData/Local/Temp/scp30945/domains/tajemniczy-klient.com.pl/public_html/_forum/phpbb/db/tools.php",
 		"/C/Users/darxide/AppData/Local/Temp/scp29825/domains/tajemniczy-klient.com.pl/public_html/_forum/phpbb/class_loader.php",
-		"/C/Users/darxide/AppData/Local/Temp/scp52289/assets/img/leki/fff.png",
-		"/C/xampp/htdocs/pagerank/cacher.class.php",
-		"/C/xampp/htdocs/pagerank/index.php",
-		"/C/xampp/htdocs/pagerank/google_pagerank.class.php",
-		"/C/xampp/htdocs/pagerank/pr.class.php",
-		"/C/Users/darxide/AppData/Local/Temp/scp24006/domains/oprogramowanie-dedykowane.pl/public_html/assets/css/style.css"
+		"/C/Users/darxide/AppData/Local/Temp/scp52289/assets/img/leki/fff.png"
 	],
 	"find":
 	{
@@ -620,6 +625,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"color:",
 			"each",
 			"zalog",
 			"zalo",
@@ -746,8 +752,7 @@
 			"query",
 			"localhost",
 			"host",
-			"localho",
-			"connct"
+			"localho"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -780,24 +785,24 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "include/tpl/pages_index/home.tpl",
+					"file": "include/tpl/index.tpl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5390,
+						"buffer_size": 5364,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1699,
-								1701
+								2057,
+								2057
 							]
 						],
 						"settings":
@@ -811,61 +816,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 300.0,
+						"translation.y": 713.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "include/tpl/pages_index/index.tpl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4231,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1698,
-								1699
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 153.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "assets/scss/style.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10861,
+						"buffer_size": 11259,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10814,
-								10814
+								10959,
+								10959
 							]
 						],
 						"settings":
@@ -878,27 +849,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 10050.0,
+						"translation.y": 10340.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "assets/css/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19376,
+						"buffer_size": 19791,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15041,
-								15041
+								2015,
+								2015
 							]
 						],
 						"settings":
@@ -909,27 +880,27 @@
 							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2926.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "include/tpl/index.tpl",
+					"buffer": 3,
+					"file": "include/tpl/pages_index/home.tpl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5373,
+						"buffer_size": 8859,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3327,
-								3327
+								7151,
+								7151
 							]
 						],
 						"settings":
@@ -943,43 +914,74 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1393.0,
+						"translation.y": 2860.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "assets/js/main.js",
+					"buffer": 4,
+					"file": "assets/scss/_mobile.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2298,
+						"buffer_size": 257,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1225,
-								1229
+								127,
+								127
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1233.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "assets/scss/_tablet.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 292,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								287,
+								287
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -1042,6 +1044,26 @@
 		"selected_items":
 		[
 			[
+				"index",
+				"include\\tpl\\index.tpl"
+			],
+			[
+				"table",
+				"assets\\scss\\_tablet.scss"
+			],
+			[
+				"mobile",
+				"assets\\scss\\_mobile.scss"
+			],
+			[
+				"stylecss",
+				"assets\\css\\style.css"
+			],
+			[
+				"idextpl",
+				"include\\tpl\\index.tpl"
+			],
+			[
 				"main",
 				"assets\\js\\main.js"
 			],
@@ -1052,10 +1074,6 @@
 			[
 				"styles",
 				"assets\\scss\\style.scss"
-			],
-			[
-				"index",
-				"include\\tpl\\index.tpl"
 			],
 			[
 				"style",
@@ -1086,16 +1104,8 @@
 				"assets\\scss\\style.scss"
 			],
 			[
-				"stylecss",
-				"assets\\css\\style.css"
-			],
-			[
 				"stylescss",
 				"assets\\scss\\style.scss"
-			],
-			[
-				"mobile",
-				"assets\\scss\\_mobile.scss"
 			],
 			[
 				"sty",
@@ -1136,10 +1146,6 @@
 			[
 				"mobi",
 				"assets\\scss\\_mobile.scss"
-			],
-			[
-				"table",
-				"assets\\scss\\_tablet.scss"
 			],
 			[
 				"tablet",

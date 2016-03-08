@@ -132,3 +132,40 @@ function isScrolledIntoView(elem)
 $(window).scroll(function() {
 	isScrolledIntoView('.getting-started') == true && arrowz()
 })
+
+
+/*svg animationz */
+
+function step1()
+{
+	$('.st2').attr('class' , 'st2 scale1')
+}
+function step2()
+{
+	$('.st1').attr('class' , 'st1 scale1')
+}
+function step3()
+{
+	$('.st1').attr('class' , 'st1')
+	$('.st2').attr('class' , 'st2')
+}
+
+var steps = [
+	function(){step1()},	
+	function(){step2()},
+	function(){step3()}
+]
+
+var start = 0
+
+function polandTimeout()
+{
+	setTimeout(function() {
+		steps[start]()
+		start++
+		if(start == steps.length) start = 0
+		polandTimeout()
+	},500)
+}
+
+polandTimeout()

@@ -541,7 +541,27 @@ ol {
         margin-bottom: 60px;
     }
 }
-
+/*svg classes*/
+.st1,
+.st2,
+.st3 {
+    transform-origin: center;
+    transition:
+        transform 0.4s ease, 
+        -webkit-transform 0.4s ease;
+}
+.st1 {
+    transform: scale(0.5) skew(0deg);
+    -webkit-transform: scale(0.5) skew(0deg);
+}
+.st2 {
+    transform: scale(0.7);
+    -wenkit-transform: scale(0.7);
+}
+.scale1 {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
 
 @import '_mobile.scss';
 @import 'tablet.scss';

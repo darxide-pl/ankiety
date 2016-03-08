@@ -137,8 +137,10 @@
     </div>
 
     <div class="row">
-      <div class="col-md-3 col-sm-3 hidden-xs advantage__ico">
-        <img src="<?php echo BASE_DIR ?>/assets/img/polska.svg" style="width:100px" />
+      <div class="col-md-3 col-sm-3 hidden-xs advantage__ico" style="padding:0 60px">
+
+      <?php echo file_get_contents("assets/img/polska.svg"); ?>
+
       </div>
       <div class="col-md-9 col-sm-9">
         To uczestnik sam decyduje, czy wypełni ankietę. Może w ogóle jej nie rozpocząć bądź też zrezygnować w trakcie jej wypełniania. Jednak im więcej ankiet wypełni, tym więcej będzie miał punktów, a te można wymienić na pieniądze. Na systemie „ankiety za punkty i nagrody” korzystają wszyscy. Firmy zlecające badania, ponieważ otrzymują gwarancję rzetelności i reprezentatywności wyników (siatka respondentów internetowych jest największą możliwą pulą badanych), firma badawcza, która częściej może oferować klientom badania online oraz sami respondenci zdobywający doświadczenie i zarabiający dzięki wypełnianiu płatnych ankiet online.   
