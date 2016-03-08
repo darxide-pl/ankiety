@@ -517,6 +517,32 @@ ol {
     text-align: center;
     width: 42.8571%;
     color: #fff;
+    z-index:0;
 }
+
+.advantages {
+    background-color: rgb(32,80,129);
+    color: #fff;
+    overflow: hidden;
+    .header {
+        text-align: center;
+        font-weight: 600;
+        font-size: 30px;
+        padding: 50px 0;
+    }
+    .col-md-9,
+    .col-md-12 {
+        text-align: justify;
+    }
+    .advantage__ico {
+        text-align: center;
+        font-size: 70px;
+    }
+    .row {
+        margin-bottom: 60px;
+    }
+}
+
+
 @import '_mobile.scss';
 @import 'tablet.scss';
