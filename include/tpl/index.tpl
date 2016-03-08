@@ -50,7 +50,7 @@
       <?php echo file_get_contents(APPLICATION_PATH. '/assets/fonts/fa/css/font-awesome.min.css') ?>
       <?php echo file_get_contents(APPLICATION_PATH.'/assets/css/style.css'); ?>
     </style>
-    <link rel="icon" href="<?php echo BASE_DIR ?>assets/img/a.ico" type="image/x-icon"/>
+    <link rel="icon" href="<?php echo BASE_DIR ?>asd.ico" type="image/x-icon"/>
     
 	<?php Modules_Handler::loadCss() ?> 
 	

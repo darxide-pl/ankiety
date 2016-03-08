@@ -521,8 +521,6 @@ ol {
 }
 
 .advantages {
-    background-color: rgb(32,80,129);
-    color: #fff;
     overflow: hidden;
     .header {
         text-align: center;
@@ -537,6 +535,7 @@ ol {
     .advantage__ico {
         text-align: center;
         font-size: 70px;
+        color: #162F34;
     }
     .row {
         margin-bottom: 60px;
