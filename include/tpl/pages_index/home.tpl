@@ -101,7 +101,7 @@
 
     <div class="row">
       <div class="col-md-3 col-sm-3 advantage__ico hidden-xs">
-        <i class="fa fa-money"></i>
+        <img src="<?php echo BASE_DIR ?>/assets/img/bo_1.svg" style="margin-top:-30px" />
       </div>
       <div class="col-md-9 col-sm-9">
         Płatne ankiety internetowe to zdecydowanie najprostszy sposób na dodatkowe pieniądze, które można zarobić bez wychodzenia z domu. Wystarczy zarejestrować się w naszym panelu, uzupełnić profil uczestnika, a następnie brać udział w badaniach, do których zaproszenia otrzymuje się drogą mailową. Za każdą wypełnioną ankietę otrzymuje się punkty, a te można wymienić na pieniądze.
@@ -114,16 +114,16 @@
         Do wypełniania ankiet online wystarczy dowolne urządzenie (pecet, laptop, tablet, czy smartfon) ze zaktualizowaną przeglądarką internetową (najlepiej Google Chrome) i dostępem do Internetu. Nie potrzeba do tego ani specjalnego oprogramowania, ani specjalistycznej wiedzy.
       </div>
       <div class="col-md-3 col-sm-3 advantage__ico hidden-xs">
-        <i class="fa fa-wifi"></i>
+        <img src="<?php echo BASE_DIR ?>/assets/img/bo_2.svg" />
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-3 col-sm-3 advantage__ico hidden-xs">
-        <i class="fa fa-user"></i>
+        <img src="<?php echo BASE_DIR ?>/assets/img/bo_3.svg" />
       </div>
       <div class="col-md-9 col-sm-9">
-        Do efektywnego działania panelu potrzebni są ludzie w różnym wieku, z różnym wykształceniem i statusem zawodowym itd. Paneliści mają stanowić przekrój polskiego społeczeństwa. W celu zwiększenia prawdopodobieństwa udziału w badaniach należy dokładnie i w całości wypełnić profil uczestnika. To na podstawie informacji zawartych w profilu system badawczy dobiera użytkowników do kolejnych projektów. Są to m.in.: imię i nazwisko, adres e-mail, województwo, wielkość miejscowości zamieszkania, wiek, płeć, wykształcenie, zainteresowania.
+      Do efektywnego działania panelu potrzebni są ludzie w różnym wieku, z różnym wykształceniem i statusem zawodowym itd. Paneliści mają stanowić przekrój polskiego społeczeństwa. W celu zwiększenia prawdopodobieństwa udziału w badaniach należy dokładnie i w całości wypełnić profil uczestnika. To na podstawie informacji zawartych w profilu system badawczy dobiera użytkowników do kolejnych projektów. Są to m.in.: imię i nazwisko, adres e-mail, województwo, wielkość miejscowości zamieszkania, wiek, płeć, wykształcenie, zainteresowania.
       </div>
     </div>
 
@@ -132,7 +132,7 @@
         Jeśli dany uczestnik kwalifikuje się do udziału w badaniu, to nazwa tego projektu pojawia się na jego koncie użytkownika panelu, a także zostaje do niego wysłane zaproszenie e-mail do wypełnienia ankiety. W wiadomości znajdują się informacje o tym, jaki tytuł nosi projekt, czego dotyczy ankieta, ile orientacyjnie potrwa jej wypełnianie, do kiedy formularz jest aktywny, ile punktów można otrzymać za kompletne wypełnienie kwestionariusza.
       </div>
       <div class="col-md-3 col-sm-3 advantage__ico hidden-xs">
-        <i class="fa fa-at"></i>
+        <img src="<?php echo BASE_DIR ?>/assets/img/bo_4.svg" style="margin-top: -30px" />
       </div>
     </div>
 

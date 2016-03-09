@@ -1,10 +1,3 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(.*)$ index.php [QSA,L]
-</IfModule>
 <ifModule mod_deflate.c>
   <filesMatch "\.(css|js|x?html?|php)$">
     SetOutputFilter DEFLATE
@@ -14,3 +7,14 @@
 <FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif|js|css)$">
 Header set Cache-Control "max-age=31536050"
 </FilesMatch>
+ 
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteCond %{HTTP_HOST} !^www\.badanie\-opinii\.pl$ [NC]
+	RewriteRule ^(.*)$ http://www.badanie-opinii.pl/$1 [R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
