@@ -100,6 +100,8 @@
       <a href="<?php echo (strlen($_SERVER['REQUEST_URI']) > 2) ? '/' : '' ?>#kontakt" class="anchor">Kontakt</a>
       <a href="/faq">FAQ</a>
       <a href="/onas">O nas</a>
+      <a href="/regulamin">Regulamin</a>
+      <a href="/polityka-prywatnosci">Polityka prywatności</a>
     </div>
   </div>
 </div>

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"trans",
+				"transform-origin"
+			],
+			[
 				"adva",
 				"advantage__ico"
 			],
@@ -379,7 +383,7 @@
 			"file": "assets/scss/style.scss",
 			"settings":
 			{
-				"buffer_size": 11259,
+				"buffer_size": 11642,
 				"line_ending": "Windows"
 			}
 		},
@@ -387,7 +391,7 @@
 			"file": "assets/css/style.css",
 			"settings":
 			{
-				"buffer_size": 19791,
+				"buffer_size": 20077,
 				"line_ending": "Windows"
 			}
 		},
@@ -395,7 +399,15 @@
 			"file": "include/tpl/pages_index/home.tpl",
 			"settings":
 			{
-				"buffer_size": 8859,
+				"buffer_size": 8861,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/js/main.js",
+			"settings":
+			{
+				"buffer_size": 2791,
 				"line_ending": "Windows"
 			}
 		},
@@ -471,15 +483,11 @@
 	[
 		"/C/xampp/htdocs/GIT/ankiety",
 		"/C/xampp/htdocs/GIT/ankiety/assets",
-		"/C/xampp/htdocs/GIT/ankiety/assets/scss",
-		"/C/xampp/htdocs/GIT/ankiety/include/class",
-		"/C/xampp/htdocs/GIT/ankiety/include/class/PEAR",
-		"/C/xampp/htdocs/GIT/ankiety/include/class/PEAR/Cache",
-		"/C/xampp/htdocs/GIT/ankiety/include/tpl",
-		"/C/xampp/htdocs/GIT/ankiety/include/tpl/pages_index"
+		"/C/xampp/htdocs/GIT/ankiety/assets/scss"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/GIT/ankiety/js/main.js",
 		"/C/xampp/htdocs/GIT/ankiety/scss/style.scss",
 		"/C/xampp/htdocs/GIT/ankiety/include/tpl/pages_index/home.tpl",
 		"/C/xampp/htdocs/GIT/ankiety/include/tpl/pages_index/index.tpl",
@@ -496,7 +504,6 @@
 		"/C/Users/darxide/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
 		"/C/xampp/htdocs/GIT/ankiety/include/class/Session.php",
 		"/C/Users/darxide/AppData/Local/Temp/scp08107/ankiety/assets/img/logo.svg",
-		"/C/xampp/htdocs/GIT/ankiety/js/main.js",
 		"/C/xampp/htdocs/GIT/ankiety/index.php",
 		"/C/xampp/htdocs/GIT/ankiety/sftp-config.json",
 		"/C/xampp/htdocs/GIT/ankiety/include/core.php",
@@ -625,6 +632,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"svg",
 			"color:",
 			"each",
 			"zalog",
@@ -751,8 +759,7 @@
 			"charsert",
 			"query",
 			"localhost",
-			"host",
-			"localho"
+			"host"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -785,7 +792,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -816,10 +823,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 713.0,
+						"translation.y": 2240.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -828,15 +835,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11259,
+						"buffer_size": 11642,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10959,
-								10959
+								11460,
+								11460
 							]
 						],
 						"settings":
@@ -849,10 +856,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 10340.0,
+						"translation.y": 10760.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -861,15 +868,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19791,
+						"buffer_size": 20077,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2015,
-								2015
+								1218,
+								1218
 							]
 						],
 						"settings":
@@ -883,7 +890,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -892,15 +899,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8859,
+						"buffer_size": 8861,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7151,
-								7151
+								6989,
+								6989
 							]
 						],
 						"settings":
@@ -914,14 +921,47 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2860.0,
+						"translation.y": 2813.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
+					"file": "assets/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2791,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2746,
+								2746
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2810.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "assets/scss/_mobile.scss",
 					"semi_transient": false,
 					"settings":
@@ -949,11 +989,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "assets/scss/_tablet.scss",
 					"semi_transient": false,
 					"settings":
@@ -981,7 +1021,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1044,6 +1084,10 @@
 		"selected_items":
 		[
 			[
+				"main",
+				"assets\\js\\main.js"
+			],
+			[
 				"index",
 				"include\\tpl\\index.tpl"
 			],
@@ -1062,10 +1106,6 @@
 			[
 				"idextpl",
 				"include\\tpl\\index.tpl"
-			],
-			[
-				"main",
-				"assets\\js\\main.js"
 			],
 			[
 				"hta",
@@ -1269,9 +1309,17 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "loca",
+		"last_filter": "local",
 		"selected_items":
 		[
+			[
+				"local",
+				"C:\\xampp\\htdocs\\localhost.sublime-project"
+			],
+			[
+				"ankie",
+				"C:\\xampp\\htdocs\\GIT\\ankiety\\GIT_ankiety.sublime-project"
+			],
 			[
 				"loca",
 				"C:\\xampp\\htdocs\\localhost.sublime-project"
@@ -1279,10 +1327,6 @@
 			[
 				"main",
 				"C:\\xampp\\htdocs\\SFTP\\BIOSTAT\\main_biostat.sublime-project"
-			],
-			[
-				"local",
-				"C:\\xampp\\htdocs\\localhost.sublime-project"
 			],
 			[
 				"bios",
