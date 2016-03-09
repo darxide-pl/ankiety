@@ -97,6 +97,7 @@
     <div class="fixed-menu__list">
       <a href="http://catidev.ecrf.biz.pl/login/panel" class="hidden-lg hidden-md hidden-sm">Zaloguj się</a>
       <a href="<?php echo (strlen($_SERVER['REQUEST_URI']) > 2) ? '/' : '' ?>#getting-started" class="anchor">Jak zacząć</a>
+      <a href="/badania-internetowe">Badania internetowe</a>
       <a href="<?php echo (strlen($_SERVER['REQUEST_URI']) > 2) ? '/' : '' ?>#kontakt" class="anchor">Kontakt</a>
       <a href="/faq">FAQ</a>
       <a href="/onas">O nas</a>
