@@ -47,7 +47,7 @@
               <input class="form-control" placeholder="email" name="email"></input>  
               <input class="form-control" placeholder="imię" name="first-name"></input>
               <input class="form-control" placeholder="nazwisko" name="surname"></input>
-              <i class="fa fa-square-o form-reg"></i>rejestrując się, akceptuję <a href="/regulamin-panelu-badawczego">regulamin</a>  
+              <i id="regulamin_checked" class="fa fa-square-o form-reg"></i>rejestrując się, akceptuję <a href="/regulamin-panelu-badawczego">regulamin</a>  
               <input type="hidden" name="page_action" value="7ed1feb90b13a__VXNlcnN8cmVnaXN0ZXJfcmVzdA%3D%3D__52fe1c9f2409828147cb33c194b" />
               <input id="panel_register" class="btn btn-primary" value="rejestruj" />
             </form>
@@ -167,6 +167,18 @@
 <script type="text/javascript">
 
 on(function(){
+
+  $("#regulamin_checked").on('click',function (e) {
+    e.preventDefault();
+    var className = $(this).attr('class');
+    if (className == 'fa form-reg fa-square-o') {
+      $('#panel_register').removeClass('disabled')
+
+    } else {
+      $('#panel_register').addClass('disabled');
+    }
+   
+  });
 
   $("#panel_register").on('click',function (e) {
 
