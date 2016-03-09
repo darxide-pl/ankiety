@@ -156,10 +156,7 @@
             <img src="<?php echo BASE_DIR ?>/assets/img/logo.svg" />
         </div>
         <div style="margin-top: 25px;">
-            (+48) 22 12 28 025<br>
-            biuro@rstat.pl<br>
-            ul. Kowalczyka 17<br>
-            44-206 Rybnik
+            <a href="mailto:biuro@badanie-opinii.pl">biuro@badanie-opinii.pl</a>
         </div>
     </div>
 </div>
