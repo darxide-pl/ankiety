@@ -547,21 +547,23 @@ ol {
 .st2,
 .st3 {
     transform-origin: center;
+    transform: translate(5px,-25px);
+    -webkit-transform: translate(5px,-25px);
     transition:
         transform 0.4s ease, 
         -webkit-transform 0.4s ease;
 }
 .st1 {
-    transform: scale(0.5) skew(0deg);
-    -webkit-transform: scale(0.5) skew(0deg);
+    transform: translate(5px,-25px) scale(0.5) skew(0deg);
+    -webkit-transform: translate(5px,-25px) scale(0.5) skew(0deg);
 }
 .st2 {
-    transform: scale(0.7);
-    -wenkit-transform: scale(0.7);
+    transform: translate(5px,-25px) scale(0.7);
+    -wenkit-transform: translate(5px,-25px) scale(0.7);
 }
 .scale1 {
-    transform: scale(1);
-    -webkit-transform: scale(1);
+    transform: translate(5px,-25px) scale(1);
+    -webkit-transform: translate(5px,-25px) scale(1);
 }
 
 @import '_mobile.scss';
