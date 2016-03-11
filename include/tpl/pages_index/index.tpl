@@ -122,7 +122,7 @@ on(function(){
 
          } else {
 
-          location.href = 'http://cati.ecrf.biz.pl/login/panel/';
+          location.href = 'http://cati.ecrf.biz.pl/login/panel_register_ok/';
 
          }
 
