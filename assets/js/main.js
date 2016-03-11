@@ -146,14 +146,20 @@ function step2()
 }
 function step3()
 {
+	$('.st4').attr('class' , 'st4 scale1')
+}
+function step4()
+{
 	$('.st1').attr('class' , 'st1')
 	$('.st2').attr('class' , 'st2')
+	$('.st4').attr('class' , 'st4')
 }
 
 var steps = [
 	function(){step1()},	
 	function(){step2()},
-	function(){step3()}
+	function(){step3()},
+	function(){step4()}
 ]
 
 var start = 0
