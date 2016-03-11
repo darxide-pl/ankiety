@@ -5,7 +5,7 @@
 		[
 			[
 				"trans",
-				"transform-origin"
+				"transform"
 			],
 			[
 				"adva",
@@ -383,7 +383,7 @@
 			"file": "include/tpl/pages_index/index.tpl",
 			"settings":
 			{
-				"buffer_size": 4249,
+				"buffer_size": 4581,
 				"line_ending": "Windows"
 			}
 		},
@@ -391,7 +391,23 @@
 			"file": "include/tpl/pages_index/home.tpl",
 			"settings":
 			{
-				"buffer_size": 9004,
+				"buffer_size": 9336,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/style.scss",
+			"settings":
+			{
+				"buffer_size": 11875,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/css/style.css",
+			"settings":
+			{
+				"buffer_size": 20296,
 				"line_ending": "Windows"
 			}
 		}
@@ -602,6 +618,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"translate(0,-30px)",
+			"translate(-30px,0)",
 			"<form",
 			"menu",
 			"regula",
@@ -727,9 +745,7 @@
 			"connect",
 			"trans",
 			"local",
-			"text-deco",
-			"root",
-			"chars"
+			"text-deco"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -737,6 +753,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"translate(5px,-25px)",
+			"translate(0,-30px)",
 			"",
 			"fetchArray(SQLITE3_NUM)",
 			"#work",
@@ -762,7 +780,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -796,7 +814,7 @@
 						"translation.y": 2153.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -805,15 +823,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4249,
+						"buffer_size": 4581,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1896,
-								1901
+								0,
+								0
 							]
 						],
 						"settings":
@@ -829,7 +847,7 @@
 						"translation.y": 1203.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -838,15 +856,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9004,
+						"buffer_size": 9336,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8331,
-								8331
+								8036,
+								8036
 							]
 						],
 						"settings":
@@ -860,10 +878,74 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3253.0,
+						"translation.y": 2773.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/scss/style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11875,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11474,
+								11474
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10828.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "assets/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20296,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -916,7 +998,7 @@
 	"project": "GIT_ankiety.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -925,6 +1007,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"stylecss",
+				"assets\\css\\style.css"
+			],
+			[
+				"stylescss",
+				"assets\\scss\\style.scss"
+			],
 			[
 				"stylescs",
 				"assets\\scss\\style.scss"
@@ -948,10 +1038,6 @@
 			[
 				"mobile",
 				"assets\\scss\\_mobile.scss"
-			],
-			[
-				"stylecss",
-				"assets\\css\\style.css"
 			],
 			[
 				"idextpl",
@@ -987,10 +1073,6 @@
 			],
 			[
 				"stylessc",
-				"assets\\scss\\style.scss"
-			],
-			[
-				"stylescss",
 				"assets\\scss\\style.scss"
 			],
 			[
@@ -1155,9 +1237,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "staty",
+		"last_filter": "catide",
 		"selected_items":
 		[
+			[
+				"catide",
+				"C:\\xampp\\htdocs\\GIT\\catidev\\GIT_catidev.sublime-project"
+			],
 			[
 				"staty",
 				"C:\\xampp\\htdocs\\GIT\\statystyka-medyczna.com.pl\\GIT_statystyka-medyczna.com.sublime-workspace"
