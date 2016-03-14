@@ -168,11 +168,12 @@ on(function(){
   $("#regulamin_checked").on('click',function (e) {
     e.preventDefault();
     var className = $(this).attr('class');
-    if (className == 'fa form-reg fa-square-o') {
-      $('#panel_register').removeClass('disabled')
+    if (className == 'fa form-reg fa-check-square-o') {
+      $('#panel_register').addClass('disabled')
+     
 
     } else {
-      $('#panel_register').addClass('disabled');
+       $('#panel_register').removeClass('disabled')
     }
    
   });
