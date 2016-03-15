@@ -190,9 +190,26 @@ on(function(){
 
           $("input[name='email']").css('border-color','red');
 
-          $("#login_messages").html("Taki email juz istnieje")
+            if (result.group_id==14 || result.group_id==15 ) {
 
-          console.log(result.msg);
+                var msg = "",
+                    msg1 = "";
+
+                if (result.group_id==15) {
+                   msg ="Panel";
+                   msg1 ="TK";
+                } else if (result.group_id==14) {
+                   msg ="TK";
+                   msg1 ="Panel";
+                }
+
+                $("#login_messages").html("Masz już konto jako użytkownik "+msg+" aby korzystać z "+msg1+" przejdź do profilu")
+
+            } else {
+
+              $("#login_messages").html("Taki email juz istnieje")
+
+            }
 
          } else {
 
