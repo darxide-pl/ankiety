@@ -95,11 +95,12 @@ on(function(){
   $("#regulamin_checked").on('click',function (e) {
     e.preventDefault();
     var className = $(this).attr('class');
-    if (className == 'fa form-reg fa-square-o') {
-      $('#panel_register').removeClass('disabled')
-
+    if (className == 'fa form-reg fa-check-square-o') {
+     
+       $('#panel_register').addClass('disabled');
     } else {
-      $('#panel_register').addClass('disabled');
+     
+       $('#panel_register').removeClass('disabled')
     }
    
   });
@@ -116,13 +117,30 @@ on(function(){
 
           $("input[name='email']").css('border-color','red');
 
-          $("#login_messages").html("Taki email juz istnieje")
+            if (result.group_id==14 || result.group_id==15 ) {
 
-          console.log(result.msg);
+              var msg = "",
+                  msg1 = "";
+
+              if (result.group_id==15) {
+                 msg ="Panel";
+                 msg1 ="TK";
+              } else if (result.group_id==14) {
+                 msg ="TK";
+                 msg1 ="Panel";
+              }
+
+              $("#login_messages").html("Masz już konto jako użytkownik "+msg+" aby korzystać z "+msg1+" przejdź do profilu")
+
+            } else {
+
+              $("#login_messages").html("Taki email juz istnieje")
+
+            }
 
          } else {
 
-          location.href = 'http://cati.ecrf.biz.pl/login/panel/';
+          location.href = 'http://cati.ecrf.biz.pl/login/panel_register_ok/';
 
          }
 

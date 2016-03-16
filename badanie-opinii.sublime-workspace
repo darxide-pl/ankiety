@@ -27,6 +27,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "include/tpl/pages_index/index.tpl",
+			"settings":
+			{
+				"buffer_size": 4593,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "include/tpl/pages_index/home.tpl",
+			"settings":
+			{
+				"buffer_size": 9348,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -66,10 +82,16 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/htdocs/badanie-opinii"
+		"/C/xampp/htdocs/badanie-opinii",
+		"/C/xampp/htdocs/badanie-opinii/include",
+		"/C/xampp/htdocs/badanie-opinii/include/tpl",
+		"/C/xampp/htdocs/badanie-opinii/include/tpl/pages_index"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/badanie-opinii/include/tpl/pages_index/home.tpl",
+		"/C/xampp/htdocs/badanie-opinii/include/tpl/pages_index/index.tpl",
+		"/C/xampp/htdocs/badanie-opinii/include/tpl/index.tpl",
 		"/C/xampp/htdocs/catidev/include/class/Module/Survey.php",
 		"/C/xampp/htdocs/catidev/include/class/Module/Forms/Manager.php",
 		"/C/xampp/htdocs/catidev/include/tpl/forms_manager/edit_form_settings.tpl",
@@ -194,10 +216,7 @@
 		"/C/xampp/htdocs/catidev/include/tpl/user/old_expanded_profile.tpl",
 		"/C/xampp/htdocs/catidev/include/tpl/user/availability.tpl",
 		"/C/xampp/htdocs/catidev/include/tpl/user/hooby_cars.tpl",
-		"/C/xampp/htdocs/catidev/include/tpl/user/research_locations.tpl",
-		"/C/xampp/htdocs/catidev/include/tpl/user/look_devices.tpl",
-		"/C/xampp/htdocs/catidev/include/tpl/user/family_work.tpl",
-		"/C/xampp/htdocs/catidev/include/tpl/user/consumer_habits.tpl"
+		"/C/xampp/htdocs/catidev/include/tpl/user/research_locations.tpl"
 	],
 	"find":
 	{
@@ -351,8 +370,75 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "include/tpl/pages_index/index.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4593,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4523,
+								4523
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1800.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "include/tpl/pages_index/home.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9348,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9298,
+								9298
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3510.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
