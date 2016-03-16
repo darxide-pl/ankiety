@@ -571,5 +571,13 @@ ol {
     -webkit-transform: translate(5px,-25px) scale(1);
 }
 
+.fa-facebook-official {
+    position: fixed;
+    z-index: 1000;
+    right: -5px;
+    top: 122px;
+    font-size: 68px !important;
+}
+
 @import '_mobile.scss';
 @import 'tablet.scss';

@@ -164,6 +164,18 @@ var steps = [
 
 var start = 0
 
+if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1)
+{
+ 	steps[0]()
+ 	steps[1]()
+ 	steps[2]()
+} else 
+{
+	polandTimeout()	
+}
+
+
+
 function polandTimeout()
 {
 	setTimeout(function() {
@@ -173,5 +185,3 @@ function polandTimeout()
 		polandTimeout()
 	},500)
 }
-
-polandTimeout()
