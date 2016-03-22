@@ -375,7 +375,7 @@
 			"file": "include/tpl/index.tpl",
 			"settings":
 			{
-				"buffer_size": 5626,
+				"buffer_size": 5803,
 				"line_ending": "Windows"
 			}
 		},
@@ -460,6 +460,18 @@
 	],
 	"file_history":
 	[
+		"/C/Users/darxide/AppData/Local/Temp/scp22432/assets/img/chosen-sprite.png",
+		"/C/Users/darxide/AppData/Local/Temp/scp22306/assets/img/page/home-howto.jpg",
+		"/C/Users/darxide/AppData/Local/Temp/scp22055/assets/img/page/logo.png",
+		"/C/Users/darxide/AppData/Local/Temp/scp22250/assets/img/page/slide4.jpg",
+		"/C/Users/darxide/AppData/Local/Temp/scp22571/assets/img/page/slider-left.png",
+		"/C/Users/darxide/AppData/Local/Temp/scp22597/assets/img/page/slider-pin.png",
+		"/C/Users/darxide/AppData/Local/Temp/scp22744/assets/img/page/slider-pin-a.png",
+		"/C/Users/darxide/AppData/Local/Temp/scp22842/assets/img/page/ulli.png",
+		"/C/Users/darxide/AppData/Local/Temp/scp22093/assets/img/page/subpage-top.jpg",
+		"/C/Users/darxide/AppData/Local/Temp/scp22342/assets/img/slider/sprite-slider-pin-active.png",
+		"/C/Users/darxide/AppData/Local/Temp/scp21879/assets/img/slider/sprite-slider-more.png",
+		"/C/Users/darxide/AppData/Local/Temp/scp21703/assets/img/slider/sprite-slider-left.png",
 		"/C/xampp/htdocs/GIT/ankiety/include/tpl/pages_index/home.tpl",
 		"/C/xampp/htdocs/GIT/ankiety/assets/css/style.css",
 		"/C/xampp/htdocs/GIT/ankiety/assets/scss/style.scss",
@@ -575,19 +587,7 @@
 		"/C/Users/darxide/AppData/Local/Temp/scp57918/assets/css/style.css",
 		"/C/Users/darxide/Desktop/@temp/bak/main.js",
 		"/C/xampp/htdocs/articles/biostat - leki.html",
-		"/C/Users/darxide/AppData/Local/Temp/scp13294/assets/js/main.js",
-		"/C/Users/darxide/AppData/Local/Temp/scp59719/include/tpl_2015/articles/home.tpl",
-		"/C/Users/darxide/AppData/Local/Temp/scp26954/domains/tajemniczy-klient.com.pl/public_html/main.css",
-		"/C/Users/darxide/AppData/Local/Temp/scp26182/domains/tajemniczy-klient.com.pl/public_html/index.tpl",
-		"/C/Users/darxide/AppData/Local/Temp/scp28607/domains/tajemniczy-klient.com.pl/public_html/_forum/phpbb/db/driver/mysql.php",
-		"/C/Users/darxide/AppData/Local/Temp/scp31039/domains/tajemniczy-klient.com.pl/public_html/_forum/phpbb/db/driver/sqlite3.php",
-		"/C/Users/darxide/AppData/Local/Temp/scp33195/domains/tajemniczy-klient.com.pl/public_html/index.tpl",
-		"/C/Users/darxide/AppData/Local/Temp/scp48737/domains/tajemniczy-klient.com.pl/public_html/_forum/phpbb/config/db.php",
-		"/C/Users/darxide/AppData/Local/Temp/scp27689/domains/tajemniczy-klient.com.pl/public_html/_forum/phpbb/config/config.php",
-		"/C/Users/darxide/AppData/Local/Temp/scp32715/domains/tajemniczy-klient.com.pl/public_html/_forum/phpbb/auth/provider/db.php",
-		"/C/Users/darxide/AppData/Local/Temp/scp32926/domains/tajemniczy-klient.com.pl/public_html/_forum/phpbb/auth/auth.php",
-		"/C/Users/darxide/AppData/Local/Temp/scp32028/domains/tajemniczy-klient.com.pl/public_html/_forum/phpbb/db/driver/driver.php",
-		"/C/Users/darxide/AppData/Local/Temp/scp31422/domains/tajemniczy-klient.com.pl/public_html/_forum/phpbb/db/driver/driver_interface.php"
+		"/C/Users/darxide/AppData/Local/Temp/scp13294/assets/js/main.js"
 	],
 	"find":
 	{
@@ -767,7 +767,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -776,15 +776,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5626,
+						"buffer_size": 5803,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4955,
-								4956
+								3953,
+								3953
 							]
 						],
 						"settings":
@@ -798,10 +798,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1713.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -832,10 +832,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 273.0,
+						"translation.y": 693.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1176,9 +1176,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "ankie",
+		"last_filter": "loca",
 		"selected_items":
 		[
+			[
+				"loca",
+				"C:\\xampp\\htdocs\\localhost.sublime-project"
+			],
 			[
 				"ankie",
 				"C:\\xampp\\htdocs\\SFTP\\platne-ankiety\\SFTP_platne-ankiety.sublime-project"
@@ -1190,10 +1194,6 @@
 			[
 				"main",
 				"C:\\xampp\\htdocs\\SFTP\\BIOSTAT\\main_biostat.sublime-project"
-			],
-			[
-				"loca",
-				"C:\\xampp\\htdocs\\localhost.sublime-project"
 			],
 			[
 				"rstat",
