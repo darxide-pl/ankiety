@@ -44,12 +44,18 @@
             <div class="float-right" id="login_messages"></div>
             <i class="fa fa-times join-close"></i>
             <form action="http://cati.ecrf.biz.pl/user/register_rest" method="post" id="login_form"> 
+              <div class="msgg msg-1">email jest nieprawidłowy</div>
               <input class="form-control" placeholder="email" name="email"></input>  
+              <div class="msgg msg-2">Podaj imię</div>
+              <div class="msgg msg-3">Imię nie może zawierać liczby</div>               
               <input class="form-control" placeholder="imię" name="first-name"></input>
+              <div class="msgg msg-4">Podaj nazwisko</div>
+              <div class="msgg msg-5">Nazwisko nie może zawierać liczby</div>                
               <input class="form-control" placeholder="nazwisko" name="surname"></input>
+              <div class="msgg msg-6">Akceptacja regulaminu jest wymagana</div>              
               <i id="regulamin_checked" class="fa fa-square-o form-reg"></i>rejestrując się, akceptuję <a href="/regulamin-panelu-badawczego">regulamin</a>  
               <input type="hidden" name="page_action" value="7ed1feb90b13a__VXNlcnN8cmVnaXN0ZXJfcmVzdA%3D%3D__52fe1c9f2409828147cb33c194b" />
-              <input id="panel_register" class="btn btn-primary disabled" value="rejestruj" />
+              <input id="panel_register" class="btn btn-primary" value="rejestruj" />
             </form>
           </div>
         </div>
@@ -149,7 +155,6 @@
 
   </div>
 </div>
-
 <div class="contact" id="kontakt">
     <div class="wrapper">
         <div>
@@ -164,63 +169,6 @@
 <script type="text/javascript">
 
 on(function(){
-
-  $("#regulamin_checked").on('click',function (e) {
-    e.preventDefault();
-    var className = $(this).attr('class');
-    if (className == 'fa form-reg fa-check-square-o') {
-      $('#panel_register').addClass('disabled')
-     
-
-    } else {
-       $('#panel_register').removeClass('disabled')
-    }
-   
-  });
-
-  $("#panel_register").on('click',function (e) {
-
-    var email = $("input[name='email']").val();
-
-      $.post("http://cati.ecrf.biz.pl/user/register_rest?page_action=7ed1feb90b13a__VXNlcnN8cmVnaXN0ZXJfcmVzdA%3D%3D__52fe1c9f2409828147cb33c194b",{email:email}, function(data){
-
-         var result = jQuery.parseJSON(data);
-
-         if (result.res == false) {
-
-          $("input[name='email']").css('border-color','red');
-
-            if (result.group_id==14 || result.group_id==15 ) {
-
-                var msg = "",
-                    msg1 = "";
-
-                if (result.group_id==15) {
-                   msg ="Panel";
-                   msg1 ="TK";
-                } else if (result.group_id==14) {
-                   msg ="TK";
-                   msg1 ="Panel";
-                }
-
-                $("#login_messages").html("Masz już konto jako użytkownik "+msg+" aby korzystać z "+msg1+" przejdź do profilu")
-
-            } else {
-
-              $("#login_messages").html("Taki email juz istnieje")
-
-            }
-
-         } else {
-
-          location.href = 'http://cati.ecrf.biz.pl/login/panel_register_ok/';
-
-         }
-
-    });
-
-  });
-
 
 });
   

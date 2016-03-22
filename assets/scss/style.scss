@@ -573,10 +573,16 @@ ol {
 
 .fa-facebook-official {
     position: fixed;
-    z-index: 1000;
     right: -5px;
+    z-index: 1000;
     top: 122px;
     font-size: 68px !important;
+}
+.msgg {
+    color:red;
+    text-align:center;
+    display:none;
+    margin: -7px;
 }
 
 @import '_mobile.scss';

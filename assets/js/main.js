@@ -185,3 +185,108 @@ function polandTimeout()
 		polandTimeout()
 	},500)
 }
+
+function hideMessage()
+{
+	$('.msgg').hide()
+	$('input').css({borderColor:'#ccc'})
+}
+
+
+function hasNumber(myString) {
+  return (
+    /\d/.test(myString));
+}
+
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+
+	$("#panel_register").on('click',function (e) {
+
+		hideMessage()
+
+		var passed = true
+
+		var imie = $('input[name=first-name]').val()
+		var nazwisko = $('input[name=surname]').val()
+
+		if($.trim(imie).length == 0) 
+			$('.msg-2').show(), 
+			$('input[name=first-name]').css({borderColor:'red'}), 
+			passed = false
+
+		if(hasNumber(imie) === true) 
+			$('.msg-3').show(),
+			$('input[name=first-name]').css({borderColor:'red'}), 
+			passed = false
+
+		if($.trim(nazwisko).length == 0) 
+			$('.msg-4').show(), 
+			$('input[name=surname]').css({borderColor:'red'}), 
+			passed = false
+
+		if(hasNumber(nazwisko) === true) 
+			$('.msg-5').show(),
+			$('input[name=surname]').css({borderColor:'red'}), 
+			passed = false
+
+		e.preventDefault();
+		var email = $("input[name='email']").val();
+
+		if($('#regulamin_checked').hasClass('fa-check-square-o') === false)
+			$('.msg-6').show(),
+			passed = false
+
+		console.log(passed)
+
+		if(validateEmail(email) == true)
+		{
+			if(passed === true)
+			{
+				$.post("http://cati.ecrf.biz.pl/user/register_rest?page_action=7ed1feb90b13a__VXNlcnN8cmVnaXN0ZXJfcmVzdA%3D%3D__52fe1c9f2409828147cb33c194b",{
+					email:email,
+					name:imie,
+					lastName:nazwisko
+				}, function(data){
+					
+					var result = jQuery.parseJSON(data);
+					console.log(result);
+					if (result.res == false) {
+						$("input[name='email']").css('border-color','red');
+
+						if (result.group_id==14 || result.group_id==15 ) {
+							var msg = "",
+							msg1 = "";
+
+							if (result.group_id==15) {
+								msg ="panelu";
+								msg1 ="niego";
+							} else if (result.group_id==14) {
+								msg ="TK";
+								msg1 ="niego";
+							}
+
+						$("#login_messages").html("Masz już konto jako użytkownik "+msg+" aby korzystać z "+msg1+" przejdź do profilu: <a href='http://cati.ecrf.biz.pl/login/panel'>link</a>")
+
+						} else {
+
+							$("#login_messages").html("Taki email juz istnieje")
+						}
+
+						setTimeout( function () {
+							$("input[name='email']").css('border-color','#ccc');
+							$("#login_messages").html("")
+						}, 8000 );
+					} else {
+						location.href = 'http://cati.ecrf.biz.pl/login/panel_register_ok/';
+					}			
+				});			
+			}
+		} else 
+		{
+			$('input[name=email]').css({borderColor:'red'})
+			$('.msg-1').show()
+		}
+	});	
