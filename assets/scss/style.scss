@@ -585,5 +585,18 @@ ol {
     margin: -7px;
 }
 
+.btn-facebook-login {
+    display: none;
+    font-size: 12px !important;
+    background: rgb(78, 105, 162) none repeat scroll 0% 0%;
+    i {
+        font-size: 13px !important;
+        margin-right: 8px !important;
+        margin-left: -9px !important;
+        position: relative;
+        top: 1px;
+    }
+}
+
 @import '_mobile.scss';
 @import 'tablet.scss';

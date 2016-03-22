@@ -68,6 +68,23 @@ $(document).on('click' , '.form-reg' , function() {
 	$(this).toggleClass('fa-check-square-o fa-square-o')
 })
 
+function hideLogin(){
+	$('iframe').hide()
+}
+
+function showLogin(){
+	$('iframe').show()
+}
+
+function hideLogout(){
+	$('.btn-facebook-login').hide()
+}
+
+function showLogout(){
+	$('.btn-facebook-login').css({
+		display:'inline-block'
+	})
+}  
 
 window.runned = 0
 function arrowz()
@@ -196,6 +213,17 @@ function hideMessage()
 function hasNumber(myString) {
   return (
     /\d/.test(myString));
+}
+
+function FBRegister(email,imie,nazwisko)
+{
+	$.post("http://cati.ecrf.biz.pl/user/register_rest?page_action=7ed1feb90b13a__VXNlcnN8cmVnaXN0ZXJfcmVzdA%3D%3D__52fe1c9f2409828147cb33c194b",{
+					email:email,
+					name:imie,
+					lastName:nazwisko
+	}).done(function(data) {
+		console.log(data)
+	})
 }
 
 function validateEmail(email) {
