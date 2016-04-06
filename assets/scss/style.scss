@@ -113,6 +113,8 @@ ol {
     z-index: 100;
     background: #fff;    
     box-shadow: 0 0 100px rgba(0,0,0,0.5);
+    height: 95px;
+    overflow: hidden;
 	.left-header {
         width:50%;
         img {
@@ -138,8 +140,8 @@ ol {
         a {
             color: initial;
             text-decoration: none;
-            margin: 0 19px;
             font-size: 18px;
+            margin: 0 10px;
             &:hover {
                 text-decoration:none;
             }
@@ -581,8 +583,9 @@ ol {
 .msgg {
     color:red;
     text-align:center;
-    display:none;
     margin: -7px;
+    display:none;
+    font-size: 11px;
 }
 
 .btn-facebook-login {
@@ -596,6 +599,12 @@ ol {
         position: relative;
         top: 1px;
     }
+}
+
+.btn-panel {
+    background-color: #1CB0FF !important;
+    color: #fff !important;
+    padding: 5px 19px 8px;
 }
 
 @import '_mobile.scss';

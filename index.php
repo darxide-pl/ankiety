@@ -7,11 +7,8 @@ ob_start("ob_gzhandler");
 define('APPLICATION_NAMESPACE', 'CMS');
 define('APPLICATION_PATH', realpath(dirname(__FILE__).'/'));
 
-error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED);
-
 ini_set("log_errors" , "1");
 ini_set("error_log" , APPLICATION_PATH."/tmp/log/".date('Ym').".txt");
-ini_set("display_errors" , "1");
 
 include './include/config.php';
 include './include/core.php';

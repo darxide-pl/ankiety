@@ -70,20 +70,24 @@ $(document).on('click' , '.form-reg' , function() {
 
 function hideLogin(){
 	$('iframe').hide()
+	$('.btn-login').hide()
 }
 
 function showLogin(){
 	$('iframe').show()
+	$('.btn-login').show()
 }
 
 function hideLogout(){
 	$('.btn-facebook-login').hide()
+	$('.btn-panel').hide()
 }
 
 function showLogout(){
 	$('.btn-facebook-login').css({
 		display:'inline-block'
 	})
+	$('.btn-panel').show()
 }  
 
 window.runned = 0
@@ -215,15 +219,48 @@ function hasNumber(myString) {
     /\d/.test(myString));
 }
 
-function FBRegister(email,imie,nazwisko)
+function FBRegister(email,imie,nazwisko,facebookID)
 {
 	$.post("http://cati.ecrf.biz.pl/user/register_rest?page_action=7ed1feb90b13a__VXNlcnN8cmVnaXN0ZXJfcmVzdA%3D%3D__52fe1c9f2409828147cb33c194b",{
 					email:email,
 					name:imie,
-					lastName:nazwisko
+					lastName:nazwisko,
+					facebookID : facebookID
+
 	}).done(function(data) {
-		console.log(data)
+			
+			console.log(data)
+			console.log('post:' + facebookID)
+
+			$.post('http://catidev.ecrf.biz.pl/login/panel?page_action=91ace24f584ca__TG9naW58ZmJfcGFuZWxfbG9naW4%3D__a4a8ff83a68cc4acc8653d5b691',{
+				email : email,
+				name:imie,
+				lastName:nazwisko,
+				facebookID : facebookID
+			} , "json").done(function (dt) {
+				var arr = JSON.parse(dt)
+				console.log(arr)
+
+				if(typeof arr.code !== 'undefined')
+				{
+					showError(arr.error)
+				} else 
+				{
+					$('.btn-panel').attr('href' , 'http://catidev.ecrf.biz.pl/login/panel?uid='+arr.hashcode+'&fbid='+facebookID)
+					showLogout()
+
+					$('#fb-modal-success').modal('show')
+					$('.btn-panel-target').attr('href' , 'http://catidev.ecrf.biz.pl/login/panel?uid='+arr.hashcode+'&fbid='+facebookID)				
+				}
+			})
 	})
+}
+
+function showError(errmsg)
+{
+	$('#fb-error').text(errmsg)
+	$('#fb-modal').modal('show')
+	FBLogout()
 }
 
 function validateEmail(email) {

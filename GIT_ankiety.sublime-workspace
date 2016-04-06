@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"parse",
+				"parseJSON"
+			],
+			[
+				"face",
+				"facebookID"
+			],
+			[
+				"show",
+				"showLogin"
+			],
+			[
+				"hideLo",
+				"hideLogout"
+			],
+			[
+				"hi",
+				"hideLogin"
+			],
+			[
+				"hide",
+				"hideLogout"
+			],
+			[
 				"trans",
 				"transform"
 			],
@@ -371,30 +395,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "include/tpl/index.tpl",
-			"settings":
-			{
-				"buffer_size": 5803,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "include/tpl/pages_index/index.tpl",
-			"settings":
-			{
-				"buffer_size": 4072,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/js/main.js",
-			"settings":
-			{
-				"buffer_size": 5678,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -450,9 +450,6 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/GIT/ankiety",
-		"/C/xampp/htdocs/GIT/ankiety/assets",
-		"/C/xampp/htdocs/GIT/ankiety/assets/css",
-		"/C/xampp/htdocs/GIT/ankiety/assets/scss",
 		"/C/xampp/htdocs/GIT/ankiety/include",
 		"/C/xampp/htdocs/GIT/ankiety/include/tpl",
 		"/C/xampp/htdocs/GIT/ankiety/include/tpl/pages_index",
@@ -460,6 +457,17 @@
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/GIT/ankiety/include/tpl/index.tpl",
+		"/C/xampp/htdocs/GIT/ankiety/include/tpl/pages_index/home.tpl",
+		"/C/xampp/htdocs/GIT/ankiety/index.php",
+		"/C/xampp/htdocs/GIT/ankiety/assets/css/style.css",
+		"/C/xampp/htdocs/GIT/ankiety/assets/scss/style.scss",
+		"/C/xampp/htdocs/GIT/ankiety/assets/js/main.js",
+		"/C/xampp/htdocs/GIT/ankiety/include/tpl/pages_index/index.tpl",
+		"/C/xampp/htdocs/GIT/ankiety/assets/js/mainmobile.js",
+		"/C/Users/darxide/Desktop/index.php",
+		"/C/Users/darxide/AppData/Local/Temp/scp53127/index.php",
+		"/C/Users/darxide/AppData/Local/Temp/scp38127/ecrfpage/include/class/Module/Pages/Index.php",
 		"/C/Users/darxide/AppData/Local/Temp/scp22432/assets/img/chosen-sprite.png",
 		"/C/Users/darxide/AppData/Local/Temp/scp22306/assets/img/page/home-howto.jpg",
 		"/C/Users/darxide/AppData/Local/Temp/scp22055/assets/img/page/logo.png",
@@ -472,17 +480,11 @@
 		"/C/Users/darxide/AppData/Local/Temp/scp22342/assets/img/slider/sprite-slider-pin-active.png",
 		"/C/Users/darxide/AppData/Local/Temp/scp21879/assets/img/slider/sprite-slider-more.png",
 		"/C/Users/darxide/AppData/Local/Temp/scp21703/assets/img/slider/sprite-slider-left.png",
-		"/C/xampp/htdocs/GIT/ankiety/include/tpl/pages_index/home.tpl",
-		"/C/xampp/htdocs/GIT/ankiety/assets/css/style.css",
-		"/C/xampp/htdocs/GIT/ankiety/assets/scss/style.scss",
 		"/C/xampp/htdocs/GIT/ankiety/js/main.js",
-		"/C/xampp/htdocs/GIT/ankiety/assets/js/main.js",
 		"/C/Users/darxide/AppData/Local/Temp/scp35750/ankiety/include/tpl/index.tpl",
 		"/C/Users/darxide/AppData/Local/Temp/scp35944/ankiety/index.php",
-		"/C/xampp/htdocs/GIT/ankiety/include/tpl/pages_index/index.tpl",
 		"/C/xampp/htdocs/GIT/ankiety/assets/img/polska.svg",
 		"/C/xampp/htdocs/GIT/ankiety/sftp-config.json",
-		"/C/xampp/htdocs/GIT/ankiety/include/tpl/index.tpl",
 		"/C/xampp/htdocs/GIT/ankiety/assets/scss/_tablet.scss",
 		"/C/xampp/htdocs/GIT/ankiety/assets/scss/_mobile.scss",
 		"/C/xampp/htdocs/GIT/ankiety/css/style.css",
@@ -494,7 +496,6 @@
 		"/C/Users/darxide/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
 		"/C/xampp/htdocs/GIT/ankiety/include/class/Session.php",
 		"/C/Users/darxide/AppData/Local/Temp/scp08107/ankiety/assets/img/logo.svg",
-		"/C/xampp/htdocs/GIT/ankiety/index.php",
 		"/C/xampp/htdocs/GIT/ankiety/include/core.php",
 		"/C/xampp/htdocs/GIT/ankiety/config.rb",
 		"/C/xampp/htdocs/GIT/ankiety/session.txt",
@@ -583,11 +584,7 @@
 		"/C/Users/darxide/AppData/Local/Temp/scp40275/include/tpl_2015/index_no_header.tpl",
 		"/C/Users/darxide/Desktop/@temp/aplikacje-dedykowane/0W5K5S13G0.jpg",
 		"/C/Users/darxide/AppData/Local/Temp/scp37412/domains/tajemniczy-klient.com.pl/public_html/index.tpl",
-		"/C/Users/darxide/AppData/Local/Temp/scp47577/domains/tajemniczy-klient.com.pl/public_html/assets/js/main.js",
-		"/C/Users/darxide/AppData/Local/Temp/scp57918/assets/css/style.css",
-		"/C/Users/darxide/Desktop/@temp/bak/main.js",
-		"/C/xampp/htdocs/articles/biostat - leki.html",
-		"/C/Users/darxide/AppData/Local/Temp/scp13294/assets/js/main.js"
+		"/C/Users/darxide/AppData/Local/Temp/scp47577/domains/tajemniczy-klient.com.pl/public_html/assets/js/main.js"
 	],
 	"find":
 	{
@@ -605,6 +602,30 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<form",
+			"modal",
+			"logout",
+			"btn-panel",
+			"attr",
+			"błąd lo",
+			"showLog",
+			"facebookID",
+			"zaloguj się",
+			"btn-login",
+			"zaloguj się",
+			"facebookID",
+			"facebook",
+			"console",
+			"'dev",
+			"dev",
+			"fbre",
+			"showLo",
+			"console.",
+			"#status",
+			"logout",
+			"console",
+			"app-id",
+			"dev",
 			"<form",
 			"translate(0,-30px)",
 			"translate(-30px,0)",
@@ -708,31 +729,7 @@
 			"app-deta",
 			"app-body",
 			"komple",
-			"app-body",
-			"medfile",
-			"close",
-			"template",
-			"app-detail",
-			"800px",
-			"FORUM",
-			".css",
-			"app-w50",
-			"page-hea",
-			"page-head",
-			".js",
-			"dlaczego my",
-			"li",
-			"script",
-			"svg",
-			"*50",
-			"k*50",
-			"scr",
-			"CEE",
-			"square-right",
-			"fff",
-			"connect",
-			"trans",
-			"local"
+			"app-body"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -767,110 +764,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "include/tpl/index.tpl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5803,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3953,
-								3953
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1713.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "include/tpl/pages_index/index.tpl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4072,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2639,
-								2638
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 693.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "assets/js/main.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5678,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4044,
-								4044
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 4330.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -931,23 +826,31 @@
 		"selected_items":
 		[
 			[
-				"stylescss",
-				"assets\\scss\\style.scss"
-			],
-			[
-				"styelcss",
-				"assets\\css\\style.css"
-			],
-			[
-				"main",
-				"assets\\js\\main.js"
+				"indexphp",
+				"index.php"
 			],
 			[
 				"mainjs",
 				"assets\\js\\main.js"
 			],
 			[
+				"main",
+				"assets\\js\\mainmobile.js"
+			],
+			[
 				"stylecss",
+				"assets\\css\\style.css"
+			],
+			[
+				"stylescss",
+				"assets\\scss\\style.scss"
+			],
+			[
+				"indextpl",
+				"include\\tpl\\index.tpl"
+			],
+			[
+				"styelcss",
 				"assets\\css\\style.css"
 			],
 			[
@@ -1176,12 +1079,28 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "loca",
+		"last_filter": "lo",
 		"selected_items":
 		[
 			[
+				"lo",
+				"C:\\xampp\\htdocs\\localhost.sublime-project"
+			],
+			[
 				"loca",
 				"C:\\xampp\\htdocs\\localhost.sublime-project"
+			],
+			[
+				"scrapp",
+				"C:\\xampp\\htdocs\\scrappy\\SFTP_scrappy.sublime-project"
+			],
+			[
+				"statysty",
+				"C:\\xampp\\htdocs\\GIT\\statystyka-medyczna.com.pl\\GIT_statystyka-medyczna.com.sublime-workspace"
+			],
+			[
+				"platne",
+				"C:\\xampp\\htdocs\\SFTP\\platne-ankiety\\SFTP_platne-ankiety.sublime-project"
 			],
 			[
 				"ankie",
@@ -1205,10 +1124,6 @@
 			],
 			[
 				"staty",
-				"C:\\xampp\\htdocs\\GIT\\statystyka-medyczna.com.pl\\GIT_statystyka-medyczna.com.sublime-workspace"
-			],
-			[
-				"statysty",
 				"C:\\xampp\\htdocs\\GIT\\statystyka-medyczna.com.pl\\GIT_statystyka-medyczna.com.sublime-workspace"
 			],
 			[

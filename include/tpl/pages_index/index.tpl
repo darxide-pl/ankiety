@@ -38,6 +38,7 @@
            <div class="float-right" id="login_messages"></div>
             <i class="fa fa-times join-close"></i>
             <form action="http://cati.ecrf.biz.pl/user/register_rest" method="post" id="login_form"> 
+            <div>Formularz rejestracyjny</div>
             <div class="msgg msg-1">email jest nieprawidłowy</div>
             <input class="form-control" placeholder="email" name="email"></input>  
             <div class="msgg msg-2">Podaj imię</div>
@@ -49,7 +50,7 @@
             <div class="msgg msg-6">Akceptacja regulaminu jest wymagana</div>
             <i id="regulamin_checked" class="fa fa-square-o form-reg"></i>rejestrując się, akceptuję <a href="/regulamin-panelu-badawczego">regulamin</a>  
             <input type="hidden" name="page_action" value="7ed1feb90b13a__VXNlcnN8cmVnaXN0ZXJfcmVzdA%3D%3D__52fe1c9f2409828147cb33c194b" />
-            <input id="panel_register" class="btn btn-primary" value="rejestruj" />
+            <input id="panel_register" class="btn btn-primary" value="Zarejestruj się" />
             </form>
           </div>
         </div>

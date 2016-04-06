@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="ie8"> <![endif]-->
 <!--[if gt IE 8]><!--> <html> <!--<![endif]-->
 <head> 
-        
+
     <meta charset="utf-8" />
 	
 	<title>Badania internetowe</title>
@@ -116,28 +116,17 @@ on(function() {
   function statusChangeCallback(response) {
     // console.log('statusChangeCallback');
     // console.log(response);
-    // The response object is returned with a status field that lets the
-    // app know the current login status of the person.
-    // Full docs on the response object can be found in the documentation
-    // for FB.getLoginStatus().
     if (response.status === 'connected') {
-      // Logged into your app and Facebook.
       testAPI();
     } else if (response.status === 'not_authorized') {
-      // The person is logged into Facebook, but not your app.
       document.getElementById('status').innerHTML = 'zaloguj się ' +
         'do aplikacji.';
     } else {
-      // The person is not logged into Facebook, so we're not sure if
-      // they are logged into this app or not.
       document.getElementById('status').innerHTML = 'Zaloguj się ' +
         'przez Facebook.';
     }
   }
 
-  // This function is called when someone finishes with the Login
-  // Button.  See the onlogin handler attached to it in the sample
-  // code below.
   function checkLoginState() {
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
@@ -156,25 +145,12 @@ on(function() {
     version    : 'v2.5' // use graph api version 2.5
   });
 
-  // Now that we've initialized the JavaScript SDK, we call 
-  // FB.getLoginStatus().  This function gets the state of the
-  // person visiting this page and can return one of three states to
-  // the callback you provide.  They can be:
-  //
-  // 1. Logged into your app ('connected')
-  // 2. Logged into Facebook, but not your app ('not_authorized')
-  // 3. Not logged into Facebook and can't tell if they are logged into
-  //    your app or not.
-  //
-  // These three cases are handled in the callback function.
-
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
   });
 
   };
 
-  // Load the SDK asynchronously
   (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
@@ -183,23 +159,22 @@ on(function() {
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 
-  // Here we run a very simple test of the Graph API after login is
-  // successful.  See statusChangeCallback() for when this call is made.
   function testAPI() {
 
+    hideLogin()
     FB.api('/me', {
         locale: 'pl_PL',
-        fields: 'first_name, last_name , name , email' 
+        fields: 'first_name, last_name , name , email , id' 
       } , function(response) {
 
-        // console.log(response)
+        var id = response.id
+
+        console.log(response)
         document.getElementById('status').innerHTML =
         'Zalogowany jako: ' + response.name + '!';
 
-        FBRegister(response.email,response.first_name,response.last_name)
+        FBRegister(response.email,response.first_name,response.last_name,id)
 
-        showLogout()
-        hideLogin()
 
     });
   }
@@ -211,8 +186,8 @@ function FBLogout()
             FB.logout(function(response) {
                 // this part just clears the $_SESSION var
                 // replace with your own code
-                $.post("/logout").done(function() {
-                    $('#status').html('<p>Wylogowano pomyślnie.</p>');
+                $.post("/").done(function() {
+                    $('#status').html('<p>Niezalogowany.</p>');
                 });
             });
         }
@@ -239,15 +214,17 @@ on(function() {
 <div id="status" style="display: inline-block;font-size: 12px">
 </div>
 
-
-
         <a href="#" id="logout" class="btn-contact hidden-xs btn-facebook-login">
           <i class="fa fa-facebook"></i>&nbsp;wyloguj
         </a>
 
+        <a href="#" class="btn-contact hidden-xs btn-facebook-login btn-panel">
+          przejdź do panelu
+        </a>
+
       <?php endif; ?>
 
-        <a href="http://cati.ecrf.biz.pl/login/panel" class="btn-contact hidden-xs">zaloguj się</a>
+        <a href="http://cati.ecrf.biz.pl/login/panel" class="btn-contact hidden-xs btn-login">zaloguj się</a>
         <a href="<?php echo (strlen($_SERVER['REQUEST_URI']) > 2) ? '/' : '' ?>#kontakt" class="anchor hidden-xs">kontakt</a>
         <span class="menu-trigger">
           <i class="fa fa-bars"></i> <span>MENU</span> 
@@ -260,11 +237,10 @@ on(function() {
 <div class="fixed-menu">
   <div class="wrapper">
     <div class="fixed-menu__list">
-      <a href="http://catidev.ecrf.biz.pl/login/panel" class="hidden-lg hidden-md hidden-sm">Zaloguj się</a>
 
       <?php if(isset($_GET['dev'])): ?>
 
-        <a href="http://catidev.ecrf.biz.pl/login/panel" class="hidden-lg hidden-md hidden-sm">Zaloguj się</a>
+        <a href="http://catidev.ecrf.biz.pl/login/panel" class="hidden-lg hidden-md hidden-sm btn-login">Zaloguj się</a>
 
       <?php endif; ?>
 
@@ -318,6 +294,42 @@ on(function() {
 	<?php if (Page_Controller::$_PAGE_CONFIG['debug'] && Auth::isSuperadmin()): ?>
 	<?php include (DIR_INC_TPL.'_debug/bar.tpl') ?>
 	<?php endif ?>
+
+<div class="modal fade" id="fb-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Błąd logowania</h4>
+      </div>
+      <div class="modal-body" id="fb-error">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">zamknij</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="fb-modal-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Logowanie Facebook</h4>
+      </div>
+      <div class="modal-body" id="fb-success">
+          Czy chcesz przejść do panelu?
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn btn-primary btn-panel-target">przejdź do panelu</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">zamknij</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
