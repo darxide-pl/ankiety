@@ -101,9 +101,7 @@
         </a>
       </div>
       <div class="right-header">
-        
 
-      <?php if(isset($_GET['dev'])): ?>
 
 <script>
 
@@ -222,8 +220,6 @@ on(function() {
           przejdź do panelu
         </a>
 
-      <?php endif; ?>
-
         <a href="http://cati.ecrf.biz.pl/login/panel" class="btn-contact hidden-xs btn-login">zaloguj się</a>
         <a href="<?php echo (strlen($_SERVER['REQUEST_URI']) > 2) ? '/' : '' ?>#kontakt" class="anchor hidden-xs">kontakt</a>
         <span class="menu-trigger">
@@ -238,14 +234,14 @@ on(function() {
   <div class="wrapper">
     <div class="fixed-menu__list">
 
-      <?php if(isset($_GET['dev'])): ?>
 
         <a href="http://catidev.ecrf.biz.pl/login/panel" class="hidden-lg hidden-md hidden-sm btn-login">Zaloguj się</a>
 
-      <?php endif; ?>
+
 
       <a href="<?php echo (strlen($_SERVER['REQUEST_URI']) > 2) ? '/' : '' ?>#getting-started" class="anchor">Jak zacząć</a>
       <a href="/badania-internetowe">Badania internetowe</a>
+      <a href="/wymien_na">Twoje punkty</a>
       <a href="<?php echo (strlen($_SERVER['REQUEST_URI']) > 2) ? '/' : '' ?>#kontakt" class="anchor">Kontakt</a>
       <a href="/faq">FAQ</a>
       <a href="/onas">O nas</a>
@@ -326,6 +322,7 @@ on(function() {
       <div class="modal-footer">
         <a href="#" class="btn btn-primary btn-panel-target">przejdź do panelu</a>
         <button type="button" class="btn btn-default" data-dismiss="modal">zamknij</button>
+        <button type="button" class="btn btn-danger btn-cookie" data-dismiss="modal">nie pokazuj więcej</button>
       </div>
     </div>
   </div>

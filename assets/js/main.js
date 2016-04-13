@@ -219,6 +219,10 @@ function hasNumber(myString) {
     /\d/.test(myString));
 }
 
+$(document).on('click' , '.btn-cookie' , function() {
+  document.cookie="show_status=not; expires=Thu, 08 Dec 2018 12:00:00 UTC; path=/";
+})
+
 function FBRegister(email,imie,nazwisko,facebookID)
 {
 	$.post("http://cati.ecrf.biz.pl/user/register_rest?page_action=7ed1feb90b13a__VXNlcnN8cmVnaXN0ZXJfcmVzdA%3D%3D__52fe1c9f2409828147cb33c194b",{
@@ -249,7 +253,25 @@ function FBRegister(email,imie,nazwisko,facebookID)
 					$('.btn-panel').attr('href' , 'http://catidev.ecrf.biz.pl/login/panel?uid='+arr.hashcode+'&fbid='+facebookID)
 					showLogout()
 
-					$('#fb-modal-success').modal('show')
+					console.log(document.cookie)
+
+					var ck = document.cookie
+					var ck_jar = ck.split(";")
+					var jar = {}
+					for (var k in ck_jar)
+					{
+						var tmp = ck_jar[k].split("=")
+						console.log(tmp)
+						jar[tmp[0].trim()] = tmp[1].trim()
+					}
+
+					
+					if(typeof jar.show_status === 'undefined')
+					{
+						$('#fb-modal-success').modal('show')						
+					}
+					
+
 					$('.btn-panel-target').attr('href' , 'http://catidev.ecrf.biz.pl/login/panel?uid='+arr.hashcode+'&fbid='+facebookID)				
 				}
 			})

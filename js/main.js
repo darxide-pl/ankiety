@@ -10,7 +10,6 @@ $(window).scroll(function(){
 	menuStyle()
 })
 
-
 function menuStyle()
 {	
 	if ($(window).scrollTop() > section_dron.offsetHeight - section_nav.offsetHeight) {
