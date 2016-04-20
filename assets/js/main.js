@@ -236,7 +236,7 @@ function FBRegister(email,imie,nazwisko,facebookID)
 			console.log(data)
 			console.log('post:' + facebookID)
 
-			$.post('http://catidev.ecrf.biz.pl/login/panel?page_action=91ace24f584ca__TG9naW58ZmJfcGFuZWxfbG9naW4%3D__a4a8ff83a68cc4acc8653d5b691',{
+			$.post('http://cati.ecrf.biz.pl/login/panel?page_action=91ace24f584ca__TG9naW58ZmJfcGFuZWxfbG9naW4%3D__a4a8ff83a68cc4acc8653d5b691',{
 				email : email,
 				name:imie,
 				lastName:nazwisko,
@@ -247,10 +247,16 @@ function FBRegister(email,imie,nazwisko,facebookID)
 
 				if(typeof arr.code !== 'undefined')
 				{
-					showError(arr.error)
+					if(arr.code != 5)
+					{
+						showError(arr.error)						
+					} else 
+					{
+						showError('adres email przypisany do tego konta facebook jest już zajęty')
+					}
 				} else 
 				{
-					$('.btn-panel').attr('href' , 'http://catidev.ecrf.biz.pl/login/panel?uid='+arr.hashcode+'&fbid='+facebookID)
+					$('.btn-panel').attr('href' , 'http://cati.ecrf.biz.pl/login/panel?uid='+arr.hashcode+'&fbid='+facebookID)
 					showLogout()
 
 					console.log(document.cookie)
@@ -272,7 +278,7 @@ function FBRegister(email,imie,nazwisko,facebookID)
 					}
 					
 
-					$('.btn-panel-target').attr('href' , 'http://catidev.ecrf.biz.pl/login/panel?uid='+arr.hashcode+'&fbid='+facebookID)				
+					$('.btn-panel-target').attr('href' , 'http://cati.ecrf.biz.pl/login/panel?uid='+arr.hashcode+'&fbid='+facebookID)				
 				}
 			})
 	})

@@ -235,7 +235,7 @@ on(function() {
     <div class="fixed-menu__list">
 
 
-        <a href="http://catidev.ecrf.biz.pl/login/panel" class="hidden-lg hidden-md hidden-sm btn-login">Zaloguj się</a>
+        <a href="http://cati.ecrf.biz.pl/login/panel" class="hidden-lg hidden-md hidden-sm btn-login">Zaloguj się</a>
 
 
 
@@ -283,7 +283,7 @@ on(function() {
 	<script src="<?php echo BASE_DIR ?>/assets/js/jquery.js"></script>
     <script src="<?php echo BASE_DIR ?>/assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?php echo BASE_DIR ?>/assets/js/waypoints/lib/noframework.waypoints.min.js"></script>
-    <script src="<?php echo BASE_DIR ?>/assets/js/main.js"></script>
+    <script src="<?php echo BASE_DIR ?>/assets/js/main.js?v=1"></script>
     <link rel="stylesheet" type="text/css" href="<?php echo BASE_DIR ?>/assets/css/font-awesome/css/font-awesome.min.css">
 	<?php Modules_Handler::loadJs() ?>
 	
