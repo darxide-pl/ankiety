@@ -507,6 +507,9 @@ ol {
     img {
         width: 200px;
     }
+    a:hover {
+        text-decoration:none;
+    }
 }
 .slogan {
     position: absolute;
@@ -595,8 +598,8 @@ ol {
     i {
         font-size: 13px !important;
         margin-right: 8px !important;
-        margin-left: -9px !important;
         position: relative;
+        margin-left: -9px !important;
         top: 1px;
     }
 }
@@ -605,6 +608,12 @@ ol {
     background-color: #1CB0FF !important;
     color: #fff !important;
     padding: 5px 19px 8px;
+}
+.img-experience {
+    width: 70px !important;
+    margin-top: -30px;
+    position: relative;
+    top: 22px;
 }
 
 @import '_mobile.scss';

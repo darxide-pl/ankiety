@@ -272,6 +272,7 @@ on(function() {
     <div class="col-md-4">
       <a href="http://www.biostat.com.pl" target="_blank">
         <img style="width: 143px;margin-top: 12px;" src="<?php echo BASE_DIR ?>/assets/img/biostat-white.svg" />
+        <img src="<?php echo BASE_DIR ?>/assets/img/12-white.png" class="img-experience" />
       </a>
     </div>
  </div>
